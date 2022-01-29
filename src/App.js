@@ -1,7 +1,12 @@
+import Amplify from 'aws-amplify';
 import React from 'react';
-import logo from './logo.svg';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
+import config from './aws-exports';
+import logo from './logo.svg';
 import "./styles.css";
+
+Amplify.configure(config);
 
 function App() {
   return (
